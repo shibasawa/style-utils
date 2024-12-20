@@ -1,0 +1,40 @@
+{
+  "name": "@shibasawa/style-utils",
+  "description": "Style utilities",
+  "version": "1.0.0",
+  "author": "shibasawa",
+  "license": "MIT",
+  "main": "dist/style-utils.cjs.js",
+  "module": "dist/style-utils.es.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "exports": {
+    ".": {
+      "require": "./dist/style-utils.cjs.js",
+      "import": "./dist/style-utils.es.js"
+    }
+  },
+  "scripts": {
+    "build": "vite build && tsc --emitDeclarationOnly",
+    "test": "vitest"
+  },
+  "keywords": [
+    "css",
+    "styles",
+    "utility",
+    "vanilla-extract"
+  ],
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "@vanilla-extract/css": "^1.16.1",
+    "@vanilla-extract/vite-plugin": "^4.0.18",
+    "@vitest/coverage-v8": "^2.1.8",
+    "jsdom": "^25.0.1",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.3",
+    "vitest": "^2.1.8"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  }
+}

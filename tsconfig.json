@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "target": "ESNext",
+    "lib": ["ES2020"],
+    "skipLibCheck": true,
+
+    /* Output Options */
+    "declaration": true,
+    "declarationDir": "dist",
+    "outDir": "dist",
+
+    /* Module Resolution */
+    "moduleResolution": "Node",
+    "isolatedModules": true,
+
+    /* Linting */
+    "strict": true,
+    "esModuleInterop": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true,
+
+    "types": ["vitest", "node"]
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"]
+}
